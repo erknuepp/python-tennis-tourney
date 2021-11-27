@@ -15,7 +15,7 @@ players = players[:36]
 players_next_round = []
 round_number = 1
 while len(players) > 1:
-    print('Round: ', round_number)
+    print('\nRound: ', round_number)
     while len(players) > 1:
         player_name_1 = players.pop()
         player_name_2 = players.pop()
@@ -30,4 +30,5 @@ while len(players) > 1:
             print('Player Two Wins!: ', player_name_2)
     round_number += 1
     players = players_next_round
-print(players)
+    players_next_round = []
+print('\nThe winner of the tourney is: ',players[0])
