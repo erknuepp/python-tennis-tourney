@@ -19,15 +19,15 @@ players = players[:36]
 print(players)
 matches = len(players) / 2
 player_next_round = []
-match_number = 0
+index = 0
 round = 0
-while  match_number < matches:
+while  index < matches:
     #players = player_next_round
     #player_next_round = []
-    player1_index = 2 * match_number
+    player1_index = 2 * index
     player2_index = player1_index + 1
-    player_name_1 = players[player1_index]
-    player_name_2 = players[player2_index]
+    player_name_1 = players[index]
+    player_name_2 = players[index]
     ##calculate how likely the player is to win
     probability_player1_wins = 0.5
     #randomize outcome
@@ -37,9 +37,7 @@ while  match_number < matches:
     else:
         player_next_round.append(player_name_2)
         print(player_name_2)
-    match_number += 1
-    player1_index += 1
-    player2_index += 1
+    index += 1
     
 
 
