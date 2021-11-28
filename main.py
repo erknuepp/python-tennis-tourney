@@ -5,4 +5,4 @@ f = open('players.json')
 players = json.load(f)
 print(players)
 
-
+f.close()
