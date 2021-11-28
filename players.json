@@ -1,0 +1,18 @@
+{
+    "players": [
+        {
+            "name": "Ed",
+            "age": 39,
+            "gender": "male",
+            "country": "US",
+            "rating": 5.0
+        },
+        {
+            "name": "Destiney",
+            "age": 32,
+            "gender": "female",
+            "country": "US",
+            "rating": 5.1
+        }
+    ]
+}
